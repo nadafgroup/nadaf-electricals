@@ -1,0 +1,476 @@
+<p>home works!</p>
+<!-- ========================================
+     HOME COMPONENT - NADAFF ELECTRICAL
+     ======================================== -->
+
+<!-- ===== WHATSAPP FLOAT BUTTON ===== -->
+<a href="https://wa.me/917798031251?text=नमस्कार,%20मला%20पंप%20सेवेबद्दल%20माहिती%20हवी%20होती." 
+   target="_blank" 
+   class="whatsapp-float" 
+   aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="whatsapp-tooltip">WhatsApp</span>
+</a>
+
+<!-- ===== SCROLL TOP BUTTON ===== -->
+<button class="scroll-top" [class.show]="showScrollTop" (click)="scrollToTop()" aria-label="Scroll to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="navbar" [class.nav-scrolled]="isScrolled">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-icon">
+        <i class="fas fa-bolt"></i>
+      </div>
+      <span>नदाफ <span class="logo-highlight">इलेक्ट्रिकल</span></span>
+    </div>
+    
+    <div class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul class="nav-menu" [class.active]="isMenuOpen">
+      <li><a href="#" (click)="closeMenu()">मुख्य</a></li>
+      <li><a href="#services" (click)="closeMenu()">सेवा</a></li>
+      <li><a href="#about" (click)="closeMenu()">आमच्याबद्दल</a></li>
+      <li><a href="#testimonials" (click)="closeMenu()">प्रतिसाद</a></li>
+      <li><a href="#contact" class="nav-cta" (click)="closeMenu()">
+        <i class="fas fa-phone"></i> संपर्क
+      </a></li>
+      <li class="nav-whatsapp-mobile">
+        <a href="https://wa.me/917798031251?text=नमस्कार,%20मला%20पंप%20सेवेबद्दल%20माहिती%20हवी%20होती." 
+           target="_blank" 
+           class="nav-cta-whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg-animation">
+    <div class="gradient-orb orb1"></div>
+    <div class="gradient-orb orb2"></div>
+    <div class="gradient-orb orb3"></div>
+    <div class="gradient-orb orb4"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <i class="fas fa-heart"></i> विश्वासार्ह सेवा • १०+ वर्षे अनुभव
+      </div>
+      
+      <h1>
+        <span class="rainbow-text">नदाफ इलेक्ट्रिकल</span><br>
+        <span class="highlight-glow">सबमर्सिबल पंप</span> तज्ञ
+      </h1>
+      
+      <!-- Engineer Details -->
+      <div class="engineer-details-card">
+        <div class="engineer-header">
+          <i class="fas fa-user-cog"></i>
+          <span class="engineer-label">इलेक्ट्रिकल अभियंता</span>
+        </div>
+        <div class="engineer-name">
+          साकीब चांदसो नदाफ
+        </div>
+        <div class="engineer-contact">
+          <span><i class="fas fa-phone-alt"></i> 7798031251</span>
+          <span><i class="fas fa-map-marker-alt"></i> नांदणी, शिरोळ, कोल्हापूर</span>
+        </div>
+        <div class="engineer-actions">
+          <a href="tel:7798031251" class="btn-call">
+            <i class="fas fa-phone-alt"></i> कॉल करा
+          </a>
+          <a href="https://wa.me/917798031251?text=नमस्कार,%20मला%20पंप%20सेवेबद्दल%20माहिती%20हवी%20होती." 
+             target="_blank" 
+             class="btn-whatsapp-hero">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-features">
+        <span><i class="fas fa-check-circle"></i> विक्री • सर्व्हिस • दुरुस्ती</span>
+        <span><i class="fas fa-check-circle"></i> दर्जेदार उत्पादने</span>
+        <span><i class="fas fa-check-circle"></i> ग्राहकांचे समाधान</span>
+      </div>
+      
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">
+          <span class="btn-shine"></span>
+          <i class="fas fa-phone-alt"></i> संपर्क करा
+        </a>
+        <a href="https://wa.me/917798031251?text=नमस्कार,%20मला%20पंप%20सेवेबद्दल%20माहिती%20हवी%20होती." 
+           target="_blank" 
+           class="btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      
+      <div class="hero-trust">
+        <span><i class="fas fa-shield-alt"></i> १०+ वर्षे अनुभव</span>
+        <span><i class="fas fa-smile"></i> ५००+ ग्राहक</span>
+        <span><i class="fas fa-star"></i> ९८% समाधान</span>
+      </div>
+    </div>
+    
+    <div class="hero-image-wrapper">
+      <div class="hero-image">
+        <div class="image-ring ring1"></div>
+        <div class="image-ring ring2"></div>
+        <div class="image-ring ring3"></div>
+        <i class="fas fa-water"></i>
+        
+        <div class="floating-card card1">
+          <i class="fas fa-tools"></i> दुरुस्ती
+        </div>
+        <div class="floating-card card2">
+          <i class="fas fa-shopping-cart"></i> विक्री
+        </div>
+        <div class="floating-card card3">
+          <i class="fas fa-cog"></i> सर्व्हिस
+        </div>
+        <div class="floating-card card4">
+          <i class="fas fa-star"></i> विश्वास
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS SECTION ===== -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-icon"><i class="fas fa-users"></i></div>
+      <div class="stat-number">500+</div>
+      <div class="stat-label">समाधानी ग्राहक</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+      <div class="stat-number">10+</div>
+      <div class="stat-label">वर्षे अनुभव</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon"><i class="fas fa-smile"></i></div>
+      <div class="stat-number">98%</div>
+      <div class="stat-label">ग्राहक समाधान</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon"><i class="fas fa-clock"></i></div>
+      <div class="stat-number">24/7</div>
+      <div class="stat-label">सेवा उपलब्ध</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about-section" id="about">
+  <div class="section-header">
+    <span class="section-subtitle"><i class="fas fa-info-circle"></i> आमच्याबद्दल</span>
+    <h2 class="section-title">विश्वासार्ह <span class="highlight">पंप सेवा</span></h2>
+    <div class="title-line"></div>
+    <p class="section-desc">आम्ही घरगुती, शेती, व्यावसायिक आणि औद्योगिक वापरासाठी सर्व प्रकारच्या पंपांच्या सेवा पुरवतो.</p>
+  </div>
+  
+  <div class="about-grid">
+    <div class="about-card card1">
+      <div class="about-icon"><i class="fas fa-water"></i></div>
+      <h3>सबमर्सिबल पंप</h3>
+      <p>सर्व प्रकारच्या सबमर्सिबल पंपांची विक्री, सर्व्हिस व दुरुस्ती</p>
+    </div>
+    <div class="about-card card2">
+      <div class="about-icon"><i class="fas fa-drill"></i></div>
+      <h3>बोअरवेल पंप</h3>
+      <p>बोअरवेल पंप बसविणे, सर्व्हिसिंग व दुरुस्ती</p>
+    </div>
+    <div class="about-card card3">
+      <div class="about-icon"><i class="fas fa-tools"></i></div>
+      <h3>मोटार रिवाइंडिंग</h3>
+      <p>तज्ञ मोटार रिवाइंडिंग व इलेक्ट्रिकल ट्रबलशूटिंग</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services-section" id="services">
+  <div class="section-header">
+    <span class="section-subtitle"><i class="fas fa-tools"></i> आमच्या सेवा</span>
+    <h2 class="section-title">आम्ही <span class="highlight">काय</span> देतो</h2>
+    <div class="title-line"></div>
+    <p class="section-desc">दर्जेदार सेवा, वाजवी दर आणि ग्राहकांचे संपूर्ण समाधान</p>
+  </div>
+  
+  <div class="services-grid">
+    <div class="service-card service1">
+      <div class="service-icon"><i class="fas fa-water"></i></div>
+      <h3>सबमर्सिबल पंप विक्री</h3>
+      <p>सर्व प्रकारच्या पंपांची विक्री</p>
+    </div>
+    <div class="service-card service2">
+      <div class="service-icon"><i class="fas fa-drill"></i></div>
+      <h3>बोअरवेल पंप बसविणे</h3>
+      <p>बोअरवेल पंप बसविणे व सर्व्हिस</p>
+    </div>
+    <div class="service-card service3">
+      <div class="service-icon"><i class="fas fa-wrench"></i></div>
+      <h3>सबमर्सिबल पंप दुरुस्ती</h3>
+      <p>तज्ञ दुरुस्ती सेवा</p>
+    </div>
+    <div class="service-card service4">
+      <div class="service-icon"><i class="fas fa-sync"></i></div>
+      <h3>मोटार रिवाइंडिंग</h3>
+      <p>मोटार रिवाइंडिंग व दुरुस्ती</p>
+    </div>
+    <div class="service-card service5">
+      <div class="service-icon"><i class="fas fa-bolt"></i></div>
+      <h3>इलेक्ट्रिकल ट्रबलशूटिंग</h3>
+      <p>इलेक्ट्रिकल समस्यांचे निवारण</p>
+    </div>
+    <div class="service-card service6">
+      <div class="service-icon"><i class="fas fa-cogs"></i></div>
+      <h3>स्टार्टर पॅनेल दुरुस्ती</h3>
+      <p>स्टार्टर पॅनेल दुरुस्ती</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY SECTION ===== -->
+<section class="why-section">
+  <div class="section-header">
+    <span class="section-subtitle"><i class="fas fa-star"></i> आमची वैशिष्ट्ये</span>
+    <h2 class="section-title">आम्ही <span class="highlight">वेगळे</span> का?</h2>
+    <div class="title-line"></div>
+  </div>
+  
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+      <h4>अनुभवी तंत्रज्ञ</h4>
+    </div>
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-check-circle"></i></div>
+      <h4>दर्जेदार स्पेअर पार्ट्स</h4>
+    </div>
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-rocket"></i></div>
+      <h4>जलद व विश्वासार्ह सेवा</h4>
+    </div>
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+      <h4>वाजवी दर</h4>
+    </div>
+    <div class="why-item">
+      <div class="why-icon"><i class="fas fa-smile"></i></div>
+      <h4>ग्राहकांचे समाधान</h4>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section class="testimonials-section" id="testimonials">
+  <div class="section-header">
+    <span class="section-subtitle"><i class="fas fa-comments"></i> ग्राहकांचे मत</span>
+    <h2 class="section-title">ग्राहक <span class="highlight">प्रतिसाद</span></h2>
+    <div class="title-line"></div>
+  </div>
+  
+  <div class="testimonials-grid">
+    <div class="testimonial-card test1">
+      <div class="testimonial-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="testimonial-quote">"</div>
+      <p>नदाफ इलेक्ट्रिकलचा पंप खूप चांगला आहे. सेवा उत्तम व वाजवी दर.</p>
+      <div class="testimonial-author">
+        <strong>श्री. दत्तात्रय पाटील</strong>
+        <span>शिरोळ</span>
+      </div>
+    </div>
+    <div class="testimonial-card test2">
+      <div class="testimonial-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="testimonial-quote">"</div>
+      <p>बोअरवेल पंप बसवण्यात उत्तम मदत. जलद सेवा व विश्वासार्ह काम.</p>
+      <div class="testimonial-author">
+        <strong>श्री. संजय देशमुख</strong>
+        <span>नांदणी</span>
+      </div>
+    </div>
+    <div class="testimonial-card test3">
+      <div class="testimonial-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="testimonial-quote">"</div>
+      <p>मोटार रिवाइंडिंग उत्तम केले. पंप आता पूर्वीसारखा चालतो.</p>
+      <div class="testimonial-author">
+        <strong>श्री. अजय जाधव</strong>
+        <span>कोल्हापूर</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SLOGANS SECTION ===== -->
+<section class="slogans-section">
+  <div class="slogans-grid">
+    <span><i class="fas fa-shield-alt"></i> विश्वासार्ह सेवा</span>
+    <span><i class="fas fa-gem"></i> उत्कृष्ट गुणवत्ता</span>
+    <span><i class="fas fa-smile"></i> ग्राहकांचे समाधान</span>
+    <span><i class="fas fa-handshake"></i> आमची ओळख</span>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact-section" id="contact">
+  <div class="section-header">
+    <span class="section-subtitle"><i class="fas fa-address-card"></i> संपर्क</span>
+    <h2 class="section-title">आमच्याशी <span class="highlight">संपर्क</span> साधा</h2>
+    <div class="title-line"></div>
+    <p class="section-desc">आपल्या पंपाच्या समस्येसाठी आजच संपर्क करा</p>
+  </div>
+  
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-user"></i></div>
+        <div>
+          <h4>साकीब चांदसो नदाफ</h4>
+          <p>इलेक्ट्रिकल अभियंता</p>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+        <div>
+          <h4>मोबाईल</h4>
+          <a href="tel:7798031251">7798031251</a>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+        <div>
+          <h4>WhatsApp</h4>
+          <a href="https://wa.me/917798031251" target="_blank">7798031251</a>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <h4>ई-मेल</h4>
+          <a href="mailto:nadafgroup.in&#64;gmail.com">nadafgroup.in&#64;gmail.com</a>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <h4>पत्ता</h4>
+          <p>नांदणी, शिरोळ, कोल्हापूर. 416102</p>
+        </div>
+      </div>
+      
+      <div class="contact-social">
+        <a href="https://wa.me/917798031251" target="_blank" class="social-circle"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:nadafgroup.in&#64;gmail.com" class="social-circle"><i class="fas fa-envelope"></i></a>
+        <a href="tel:7798031251" class="social-circle"><i class="fas fa-phone-alt"></i></a>
+      </div>
+    </div>
+    
+    <div class="contact-form-wrapper">
+      <h3><i class="fas fa-paper-plane"></i> संदेश पाठवा</h3>
+      <form class="contact-form">
+        <div class="form-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="तुमचे नाव" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-phone-alt"></i>
+          <input type="tel" placeholder="मोबाईल नंबर" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="ईमेल" />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-tools"></i>
+          <select required>
+            <option value="">सेवा निवडा...</option>
+            <option>सबमर्सिबल पंप विक्री</option>
+            <option>बोअरवेल पंप बसविणे</option>
+            <option>सबमर्सिबल पंप दुरुस्ती</option>
+            <option>मोटार रिवाइंडिंग</option>
+            <option>इलेक्ट्रिकल ट्रबलशूटिंग</option>
+            <option>स्टार्टर पॅनेल दुरुस्ती</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-comment"></i>
+          <textarea rows="4" placeholder="तुमचा संदेश..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-block">
+          <span class="btn-shine"></span>
+          <i class="fas fa-paper-plane"></i> संदेश पाठवा
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3><i class="fas fa-bolt"></i> नदाफ इलेक्ट्रिकल</h3>
+      <p>विश्वासार्ह सेवा, उत्कृष्ट गुणवत्ता आणि ग्राहकांचे समाधान.</p>
+      <div class="social-links">
+        <a href="https://wa.me/917798031251" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:nadafgroup.in&#64;gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:7798031251"><i class="fas fa-phone-alt"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-section">
+      <h4>त्वरित दुवे</h4>
+      <ul>
+        <li><a href="#home">मुख्य</a></li>
+        <li><a href="#services">सेवा</a></li>
+        <li><a href="#about">आमच्याबद्दल</a></li>
+        <li><a href="#testimonials">प्रतिसाद</a></li>
+        <li><a href="#contact">संपर्क</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>संपर्क</h4>
+      <p><i class="fas fa-user"></i> साकीब चांदसो नदाफ</p>
+      <p><i class="fas fa-phone-alt"></i> 7798031251</p>
+      <p><i class="fas fa-envelope"></i> nadafgroup.in&#64;gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> नांदणी, शिरोळ, कोल्हापूर</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2026 नदाफ इलेक्ट्रिकल. सर्व हक्क राखीव.</p>
+  </div>
+</footer>
